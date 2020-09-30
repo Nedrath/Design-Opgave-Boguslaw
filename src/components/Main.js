@@ -1,10 +1,18 @@
 import React from "react";
-import { Router } from "@reach/router";
+import { css } from "emotion";
+import SectionLeft from './SectionLeft';
+import SectionRight from './SectionRight'
 
 const Main = () => {
+  const styleMainLayout = css`
+    display: grid;
+    gap: 64px;
+  `;
+
   return (
-    <main>
-      <Router></Router>
+    <main className={styleMainLayout}>
+      <SectionLeft />
+      <SectionRight />
     </main>
   );
 };
