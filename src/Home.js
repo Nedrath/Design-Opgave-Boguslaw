@@ -4,14 +4,14 @@ import Header from "./components/Header";
 import Main from "./components/Main";
 
 const Home = () => {
-  const styleRoot = css`
+  const styleWrapper = css`
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: 132px 1fr;
+    grid-template-columns: 132px 1.2fr 0.8fr;
     column-gap: 42px;
   `;
   return (
-    <div className={styleRoot}>
+    <div className={styleWrapper}>
       <Header />
       <Main />
     </div>

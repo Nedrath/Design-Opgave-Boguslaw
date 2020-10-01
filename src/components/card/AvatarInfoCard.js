@@ -15,7 +15,6 @@ const CourseCard = () => {
     justify-content: space-between;
     padding: 0 0.6em;
     display: flex;
-    margin-top: -20px;
   `;
   return (
     <Fragment>

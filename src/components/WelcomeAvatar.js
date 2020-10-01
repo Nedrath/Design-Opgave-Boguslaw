@@ -6,9 +6,9 @@ const WelcomeAvatar = () => {
   const avatarImg = css`
     position: relative;
     z-index: 20;
-    top: -174px;
+    top: -179px;
     right: -350px;
-    height: 90%;
+    height: 93%;
   `;
   const styleArticle = css`
     height: 192px;
@@ -35,7 +35,7 @@ const WelcomeAvatar = () => {
       ></div>
       <div
         className={css`
-          height: calc(160px - 30px);
+          height: calc(187px - 30px);
           width: 620px;
           background-color: #f5f5f7;
           border-radius: 15px;

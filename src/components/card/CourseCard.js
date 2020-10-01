@@ -30,7 +30,7 @@ const CourseCard = () => {
           text="by Christopher Morgan"
         />
         <CardTime icon="time-outline" time="6h 30min" />
-        <CardLikes icon="flame-outline" likes="4,9" />
+        <CardLikes icon="flame" likes="4,9" />
         <Button BtnTxt="View Course" />
       </div>
       <div className={styleCard}>
@@ -39,8 +39,8 @@ const CourseCard = () => {
           title="Learn Figma"
           text="by Christopher Morgan"
         />
-        <CardTime icon="time-outline" time="6h 30min" />
-        <CardLikes icon="flame-outline" likes="4,9" />
+        <CardTime icon="time" time="6h 30min" />
+        <CardLikes icon="flame" likes="4,9" />
         <Button BtnTxt="View Course" />
       </div>
       <div className={styleCard}>
@@ -49,8 +49,8 @@ const CourseCard = () => {
           title="Learn Figma"
           text="by Christopher Morgan"
         />
-        <CardTime icon="time-outline" time="6h 30min" />
-        <CardLikes icon="flame-outline" likes="4,9" />
+        <CardTime icon="time" time="6h 30min" />
+        <CardLikes icon="flame" likes="4,9" />
         <Button BtnTxt="View Course" />
       </div>
       <div className={styleCard}>
@@ -59,8 +59,8 @@ const CourseCard = () => {
           title="Learn Figma"
           text="by Christopher Morgan"
         />
-        <CardTime icon="time-outline" time="6h 30min" />
-        <CardLikes icon="flame-outline" likes="4,9" />
+        <CardTime icon="time" time="6h 30min" />
+        <CardLikes icon="flame" likes="4,9" />
         <Button BtnTxt="View Course" />
       </div>
       <div className={styleCard}>
@@ -69,8 +69,8 @@ const CourseCard = () => {
           title="Learn Figma"
           text="by Christopher Morgan"
         />
-        <CardTime icon="time-outline" time="6h 30min" />
-        <CardLikes icon="flame-outline" likes="4,9" />
+        <CardTime icon="time" time="6h 30min" />
+        <CardLikes icon="flame" likes="4,9" />
         <Button BtnTxt="View Course" />
       </div>
     </Fragment>

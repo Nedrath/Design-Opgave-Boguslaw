@@ -7,6 +7,7 @@ const Nav = () => {
     height: 853px;
     width: 132px;
     border-radius: 20px;
+    box-shadow: 6px 10px 28px -1px rgba(0,0,0,0.38);
   `;
   const styleIconGrid = css`
     display: flex;
@@ -21,7 +22,7 @@ const Nav = () => {
     color: white;
     font-weight: bolder;
     text-align: center;
-    padding-top: 35px;
+    padding-top: 25px;
   `;
   const styleIconExit = css`
     margin-top: 150px;

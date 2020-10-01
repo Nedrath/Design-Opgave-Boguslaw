@@ -9,7 +9,6 @@ const LeftRight = () => {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -25px;
     margin-bottom: 39px;
   `;
   return (
