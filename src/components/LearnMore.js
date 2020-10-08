@@ -6,7 +6,7 @@ import Button from "./Button";
 
 const LearnMore = () => {
   const styleWrapper = css`
-  display: flex;
+    display: flex;
     height: 193px;
     width: 440px;
     background-color: #f5f5f7;
@@ -21,14 +21,16 @@ const LearnMore = () => {
   const styleText = css`
     padding-bottom: 30px;
     width: 80%;
-  `
+  `;
 
   return (
     <div className={styleWrapper}>
       <section>
         <ArticleHeadline name="Learn even more" />
-        <p className={styleText}>Unlock premium features only for $9.99 per month.</p>
-        <Button BtnTxt="Go Premium" />
+        <p className={styleText}>
+          Unlock premium features only for $9.99 per month.
+        </p>
+        <Button color="red" BtnTxt="Go Premium" />
       </section>
       <img src={imgBook} alt="" />
     </div>

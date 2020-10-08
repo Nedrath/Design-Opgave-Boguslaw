@@ -5,7 +5,7 @@ import Button from "../Button";
 import imgLand from "../../img/Group 71.svg";
 import imgProcent from "../../img/Group 72.svg";
 
-const CourseCard = () => {
+const AvatarInfoCard = () => {
   const styleCard = css`
     background-color: #f5f5f7;
     border-radius: 14px;
@@ -27,9 +27,8 @@ const CourseCard = () => {
         <img src={imgProcent} alt="" />
         <Button BtnTxt="Continue" />
       </div>
-      <div></div>
     </Fragment>
   );
 };
 
-export default CourseCard;
+export default AvatarInfoCard;

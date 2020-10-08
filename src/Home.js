@@ -1,7 +1,8 @@
 import React from "react";
 import { css } from "emotion";
 import Header from "./components/Header";
-import Main from "./components/Main";
+import SectionLeft from "./components/SectionLeft";
+import SectionRight from "./components/SectionRight";
 
 const Home = () => {
   const styleWrapper = css`
@@ -10,10 +11,17 @@ const Home = () => {
     grid-template-columns: 132px 1.2fr 0.8fr;
     column-gap: 42px;
   `;
+  const styleMainLayout = css`
+    display: grid;
+    gap: 64px;
+  `;
   return (
     <div className={styleWrapper}>
       <Header />
-      <Main />
+      <main className={styleMainLayout}>
+        <SectionLeft />
+        <SectionRight />
+      </main>
     </div>
   );
 };

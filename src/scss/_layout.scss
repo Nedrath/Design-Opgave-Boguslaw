@@ -8,14 +8,15 @@
 .icon-nav {
   color: white;
   font-size: 27px;
+  cursor: pointer;
 }
 .icon-nav-black {
-  color: black;
+  color: black;                                                                                                                                                                                                                                                                                                                                                               
   font-size: 27px;
 }
 .icon-nav-margin {
   position: absolute;
-  left: 900px;
+  z-index: 20;
 }
 
 .ion-icon-card {
@@ -40,9 +41,43 @@
 
 #root {
   height: 100vh;
+  // width: 70%;
+  // margin: auto;
 }
 
 main {
   display: grid;
   grid-template-columns: 1.3fr 1fr;
+}
+
+.styleCircle {
+  width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-45deg);
+
+    &.threeQuarters {
+      border-top-color: transparent;
+    }
+    &.half {
+      border-top-color: transparent;
+      border-left-color: transparent;
+    }
+    &.oneQuarter {
+      border-top-color: transparent;
+      border-left-color: transparent;
+      border-bottom-color: transparent;
+    }
+    &.notStarted {
+      border-color: transparent;
+    }
+}
+
+.stylePercentage {
+  transform: rotate(45deg);
+  font-size: 13px;
 }

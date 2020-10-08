@@ -18,7 +18,7 @@ const SectionLeft = () => {
   `;
   return (
     <section className={styleSection}>
-      <WelcomeAvatar />
+      <WelcomeAvatar firstname="Josh" />
       <div className={styleCardBox}>
         <AvatarInfoCard />
         <LeftRight />

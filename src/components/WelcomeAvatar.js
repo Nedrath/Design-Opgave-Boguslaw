@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import { css } from "emotion";
 import JoshAvatar from "../img/Illustration.svg";
+import { userContext } from "../contexts/UserContext";
 
 const WelcomeAvatar = () => {
+  // dette henter fetch fra usercontext og lader os bruge det her ved at kalde
+  // dens data direkte i {} hvor vi skal bruge dem, uden et nyt fetch
+
+  const { user } = useContext(userContext);
+  // console.log("from context: ", user);
+
   const avatarImg = css`
     position: relative;
     z-index: 20;
@@ -22,36 +29,38 @@ const WelcomeAvatar = () => {
   const styleTxtBox = css`
     display: flex;
     flex-direction: column;
-    padding-top: 25px;
+    padding-top: 45px;
     margin-left: 31px;
-  `
+  `;
   return (
-    <article className={styleArticle}>
-      <div
-        className={css`
-          height: 30px;
-          width: 620px;
-        `}
-      ></div>
-      <div
-        className={css`
-          height: calc(187px - 30px);
-          width: 620px;
-          background-color: #f5f5f7;
-          border-radius: 15px;
-        `}
-      >
-        <div className={styleTxtBox}>
-          <h1 className={styleTxtWelcome}>Hello Josh!</h1>
-          <p>It’s good to see you again.</p>
+    user && (
+      <article className={styleArticle}>
+        <div
+          className={css`
+            height: 30px;
+            width: 620px;
+          `}
+        ></div>
+        <div
+          className={css`
+            height: calc(187px - 30px);
+            width: 620px;
+            background-color: #f5f5f7;
+            border-radius: 15px;
+          `}
+        >
+          <div className={styleTxtBox}>
+            <h1 className={styleTxtWelcome}>Hello {user.firstname}</h1>
+            <p>It’s good to see you again.</p>
+          </div>
         </div>
-      </div>
-      <img
-        className={avatarImg}
-        src={JoshAvatar}
-        alt="Josh the not real human"
-      />
-    </article>
+        <img
+          className={avatarImg}
+          src={JoshAvatar}
+          alt="Josh the not real human"
+        />
+      </article>
+    )
   );
 };
 

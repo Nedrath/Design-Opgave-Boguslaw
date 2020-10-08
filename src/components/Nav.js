@@ -8,6 +8,7 @@ const Nav = () => {
     width: 132px;
     border-radius: 20px;
     box-shadow: 6px 10px 28px -1px rgba(0,0,0,0.38);
+    position: fixed;
   `;
   const styleIconGrid = css`
     display: flex;

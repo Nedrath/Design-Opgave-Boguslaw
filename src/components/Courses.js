@@ -1,14 +1,15 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { css } from "emotion";
 import CourseLink from "./CourseLink";
-
-
+import CourseList from "./CourseList";
+import { Router } from "@reach/router";
 
 const CoursesButtons = ({ all, newest, top, popular }) => {
   const styleWrapper = css`
     display: flex;
     justify-content: space-between;
     width: 70%;
+    margin-top: 20px;
   `;
   const styleActive = css`
     font-weight: bolder;
@@ -22,7 +23,7 @@ const CoursesButtons = ({ all, newest, top, popular }) => {
     text-decoration: none;
   `;
   return (
-
+    <Fragment>
       <nav className={styleWrapper}>
         <CourseLink className={styleActive} to="./">
           {all}
@@ -37,7 +38,13 @@ const CoursesButtons = ({ all, newest, top, popular }) => {
           {popular}
         </CourseLink>
       </nav>
-
+      <Router>
+        <CourseList path="/" type="all" />
+        <CourseList path="newest" type="newest" />
+        <CourseList path="top" type="top" />
+        <CourseList path="popular" type="popular" />
+      </Router>
+    </Fragment>
   );
 };
 

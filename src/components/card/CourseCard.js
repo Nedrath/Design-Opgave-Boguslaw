@@ -21,6 +21,10 @@ const CourseCard = () => {
     padding: 0 0.6em;
     display: flex;
   `;
+
+  // burde have samlet de 4 komponenter og lavet dem samlet i et komponent også
+  // kaldt det her så mange gange de sku bruges.
+
   return (
     <Fragment>
       <div className={styleCard}>
@@ -29,7 +33,7 @@ const CourseCard = () => {
           title="Learn Figma"
           text="by Christopher Morgan"
         />
-        <CardTime icon="time-outline" time="6h 30min" />
+        <CardTime icon="time" time="6h 30min" />
         <CardLikes icon="flame" likes="4,9" />
         <Button BtnTxt="View Course" />
       </div>
@@ -39,8 +43,8 @@ const CourseCard = () => {
           title="Learn Figma"
           text="by Christopher Morgan"
         />
-        <CardTime icon="time" time="6h 30min" />
-        <CardLikes icon="flame" likes="4,9" />
+        <CardTime icon="time" time="3h 15min" />
+        <CardLikes icon="flame" likes="4,7" />
         <Button BtnTxt="View Course" />
       </div>
       <div className={styleCard}>
@@ -50,7 +54,7 @@ const CourseCard = () => {
           text="by Christopher Morgan"
         />
         <CardTime icon="time" time="6h 30min" />
-        <CardLikes icon="flame" likes="4,9" />
+        <CardLikes icon="flame" likes="4,6" />
         <Button BtnTxt="View Course" />
       </div>
       <div className={styleCard}>
@@ -60,7 +64,7 @@ const CourseCard = () => {
           text="by Christopher Morgan"
         />
         <CardTime icon="time" time="6h 30min" />
-        <CardLikes icon="flame" likes="4,9" />
+        <CardLikes icon="flame" likes="4,8" />
         <Button BtnTxt="View Course" />
       </div>
       <div className={styleCard}>
@@ -70,7 +74,7 @@ const CourseCard = () => {
           text="by Christopher Morgan"
         />
         <CardTime icon="time" time="6h 30min" />
-        <CardLikes icon="flame" likes="4,9" />
+        <CardLikes icon="flame" likes="4,7" />
         <Button BtnTxt="View Course" />
       </div>
     </Fragment>

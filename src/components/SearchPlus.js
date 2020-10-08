@@ -17,6 +17,10 @@ const SearchPlus = () => {
     border: none;
     border-radius: 8px;
     text-align: center;
+    :focus {
+      outline: none;
+    }
+    
   `;
 
   return (

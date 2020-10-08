@@ -5,8 +5,9 @@ import CourseCounter from "./CourseCounter";
 import ArticleHeadline from "./ArticleHeadline";
 import CourseButtons from "./CoursesButtons";
 import DaysPicker from "./DaysPicker";
-import Diagram from "./Diagram";
 import LearnMore from "./LearnMore";
+import MyLineChart from './MyLineChart'
+
 
 const SectionRight = () => {
   const styleSection = css`
@@ -39,7 +40,7 @@ const SectionRight = () => {
         <CourseButtons all="Learning Hours" newest="My Courses" />
         <DaysPicker />
       </section>
-      <Diagram />
+      <MyLineChart />
       <LearnMore />
     </section>
   );
